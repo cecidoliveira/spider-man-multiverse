@@ -1,0 +1,36 @@
+a.link-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+a.link-button .icon{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: var(--primary-color);
+    background-clip: content-box;
+    padding: 3px;
+    border: solid 1px white;
+    border-radius: 50%;
+    
+}
+
+a.link-button .icon .play-icon{
+    width:0;
+    height: 0;
+    margin-right: -7px;
+    border:solid 7px white;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    
+}
+
+a.link-button .label{
+    margin-left: 10px;
+}

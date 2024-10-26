@@ -1,0 +1,157 @@
+@import url('reset.css');
+@import url('global.css');
+@import url('components/_navigator.css');
+@import url('components/_pills.css');
+@import url('components/_link-button.css');
+@import url('components/_gallery.css');
+
+.s-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100vh;
+}
+
+.s-wrapper video{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    opacity: .5;
+}
+
+.s-wrapper .s-column__nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+    padding-right: 50px;
+    z-index: 3;
+}
+
+.navigator{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.navigator ul{
+    z-index: 3;
+}
+
+.navigator ul li{
+    margin: 60px 0;
+}
+
+.navigator ul li:first-child{
+    margin-top: 0;
+}
+
+.navigator ul li:last-child{
+    margin-bottom: 0;
+}
+
+.navigator ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #000000;
+    border: 2px #ffffff solid;
+    border-radius: 50%;
+}
+
+.navigator::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+.navigator ul li a:hover, .navigator ul li a:active{
+    color: var(--primary-color);
+    background-color: #ffffff;
+}
+
+.navigator .navigator__icon{
+    position: absolute;
+    top: -20px;
+}
+
+.s-wrapper .s-main-content{
+    height: 100%;
+    width: 100%;
+    padding-left: 130px;
+}
+
+.s-wrapper .s-main-content__top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 70vh;
+    z-index: 3;
+}
+
+.s-wrapper .s-main-content__bottom{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 20vh;
+    z-index: 3;
+}
+
+.s-wrapper .s-main-content .s-logo img{
+    margin: 50px 0 30px;
+}
+
+.s-wrapper .s-main-content__top .s-description .pills{
+    margin-bottom: 20px;
+}
+
+.s-wrapper .s-main-content__top .s-description{
+    max-width: 50%;
+    background-color: rgba(0, 0, 0, .7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.s-wrapper .s-main-content__top .s-description .s-description__text p{
+    color: white;
+    line-height: 170%;
+}
+
+.s-wrapper .s-main-content .s-links{
+    padding: 20px 0 20px 20px;
+}
+
+.s-wrapper .s-main-content .s-links ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.s-movie01-01__bg{
+    background-image: url('../img/spiderman-tobey/movie-01/background.png');
+    background-size: cover;
+}
+.s-movie01-02__bg{
+    background-image: url('../img/spiderman-tobey/movie-02/background.png');
+    background-size: cover;
+}
+.s-movie01-03__bg{
+    background-image: url('../img/spiderman-tobey/movie-03/background.png');
+    background-size: cover;
+}
