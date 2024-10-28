@@ -101,3 +101,26 @@ body{
     background-image: url('../img/spiderman-tobey/movie-03/background.png');
     background-size: cover;
 }
+
+.s-movie02-01__bg{
+    background-image: url('../img/spiderman-andrew/movie-01/background.png');
+    background-size: cover;
+}
+.s-movie02-02__bg{
+    background-image: url('../img/spiderman-andrew/movie-02/background.png');
+    background-size: cover;
+}
+
+.s-movie03-01__bg{
+    background-image: url('../img/spiderman-tom/movie-01/background.png');
+    background-size: cover;
+}
+.s-movie03-02__bg{
+    background-image: url('../img/spiderman-tom/movie-02/background.png');
+    background-size: cover;
+}
+.s-movie03-03__bg{
+    background-image: url('../img/spiderman-tom/movie-03/background.png');
+    background-size: cover;
+}
+
